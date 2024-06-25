@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">fuel-choice</string>
+    <string name="fuel_consumption_1">Consumo Combustível 1</string>
+    <string name="search">Buscar</string>
+    <string name="liter_1">Valor Litro Combustível 1</string>
+    <string name="liter_2">Valor Litro Combustível 2</string>
+</resources>
