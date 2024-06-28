@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">fuel-choice</string>
+    <string name="app_name">Fuel Choice</string>
     <string name="fuel_consumption">Consumo Km/L</string>
     <string name="search">Buscar</string>
     <string name="liter_value">Valor do litro (R$)</string>
