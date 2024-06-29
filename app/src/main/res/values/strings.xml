@@ -6,4 +6,6 @@
     <string name="calculate">Calcular</string>
     <string name="clear">Limpar</string>
     <string name="result">O mais barato é:</string>
+    <string name="fill_all_fields">Preencha todos os campos!</string>
+    <string name="select_fuel">Selecione os tipos de combustivel!</string>
 </resources>

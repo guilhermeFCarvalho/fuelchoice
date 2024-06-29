@@ -12,8 +12,8 @@
         <item name="colorOnSecondary">@android:color/black</item>
 
         <!-- Text colors -->
-        <item name="android:textColorPrimary">@color/primaryTextColor</item>
-        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+        <item name="android:textColorPrimary">@color/primaryDarkThemeTextColor</item>
+        <item name="android:textColorSecondary">@color/secondaryDarkThemeTextColor</item>
 
         <!-- Other theme attributes -->
         <item name="colorAccent">@color/accentColor</item>
