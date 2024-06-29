@@ -21,7 +21,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_consumption_1"
             android:layout_width="165dp"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -49,7 +51,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_consumption_2"
             android:layout_width="165dp"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -78,7 +82,9 @@
             android:id="@+id/et_liter_1"
             android:layout_width="165dp"
             android:layout_height="match_parent"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:inputType="numberDecimal"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -95,18 +101,50 @@
             android:id="@+id/et_liter_2"
             android:layout_width="165dp"
             android:layout_height="match_parent"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:inputType="numberDecimal"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_calculate"
+    <ImageView
+        android:id="@+id/ic_fuel_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/calculate"
-        app:layout_constraintEnd_toStartOf="@id/btn_clear"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/input_liter_2" />
+        android:src="@drawable/ic_fuel"
+        app:tint="@color/primaryColor"
+
+        app:layout_constraintBottom_toBottomOf="@+id/input_consumption_1"
+        app:layout_constraintEnd_toStartOf="@+id/input_consumption_1"
+        app:layout_constraintTop_toTopOf="@+id/input_consumption_1"/>
+    <ImageView
+        android:id="@+id/ic_fuel_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fuel"
+        app:tint="@color/secondaryColor"
+        app:layout_constraintBottom_toBottomOf="@+id/input_consumption_2"
+        app:layout_constraintEnd_toStartOf="@+id/input_consumption_2"
+        app:layout_constraintTop_toTopOf="@+id/input_consumption_2"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_money"
+        app:tint="@color/primaryColor"
+
+        android:id="@+id/money_1"
+        app:layout_constraintBottom_toBottomOf="@+id/input_liter_1"
+        app:layout_constraintEnd_toStartOf="@+id/input_liter_1"
+        app:layout_constraintTop_toTopOf="@+id/input_liter_1" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_money"
+        app:tint="@color/secondaryColor"
+        android:id="@+id/money_2"
+        app:layout_constraintBottom_toBottomOf="@+id/input_liter_2"
+        app:layout_constraintEnd_toStartOf="@+id/input_liter_2"
+        app:layout_constraintTop_toTopOf="@+id/input_liter_2" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_clear"
@@ -114,8 +152,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/clear"
+        app:backgroundTint="@color/accentColor"
+        app:layout_constraintEnd_toStartOf="@id/btn_calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_liter_2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btn_calculate"
+        app:layout_constraintStart_toEndOf="@id/btn_clear"
         app:layout_constraintTop_toBottomOf="@id/input_liter_2" />
 
     <TextView
